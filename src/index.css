@@ -1,0 +1,7 @@
+:root{
+    --header-bg: rgb(183, 45, 252); 
+}
+
+.light{
+    --header-bg: whitesmoke;
+}

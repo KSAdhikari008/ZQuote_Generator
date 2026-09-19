@@ -1,9 +1,13 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     margin: 0px;
 }
 
 .app{
-    background-color: darkorchid;
+    background-color: rgb(209, 133, 247);
     height: 100vh;
     display: flex;
     flex-flow: column nowrap;
@@ -11,5 +15,17 @@ body{
 
 header{
     height: 50px;
+    padding: 0 20px;
+    background-color: var(--header-bg);
+    border-bottom: 2px solid black ;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.left-section, .right-section{
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
 }
