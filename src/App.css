@@ -4,6 +4,7 @@
 
 body{
     margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .app{
@@ -16,7 +17,7 @@ body{
 header{
     height: 50px;
     padding: 0 20px;
-    background-color: var(--header-bg);
+    background-color: var(--contrast-dark);
     border-bottom: 2px solid black ;
     display: flex;
     flex-flow: row nowrap;
@@ -28,4 +29,89 @@ header{
     font-size: 1.6rem;
     font-weight: 600;
     font-family: 'Courier New', Courier, monospace;
+}
+
+main{
+    box-sizing: border-box;
+    padding: 30px;
+    border: 1px solid black;
+    flex: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-category{
+    max-width: 250px;
+    height: 35px;
+    padding: 0 10px;
+    color: rgb(97, 97, 97);
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 1rem;
+    border: 2px solid black;    
+    outline: none;
+    box-shadow: 5px 5px 0px var(--contrast-dark);
+}       
+
+.quote-container{
+    border: 3px solid #000000;
+    padding: 10px;
+    /* min-height: 350px; */
+    max-width: 400px;
+    min-width: 300px;
+    box-shadow: 10px 10px 0px var(--contrast-dark);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items:center;
+}
+
+.quote{
+    font-weight: 600;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    padding: 10px;
+    flex:1;
+    font-size: 1.1rem;
+    /* border: 1px solid black; */
+}
+
+.author{
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: right;
+    /* border: 1px solid black; */
+}
+
+.categories{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px 10px 10px 10px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+
+.getBtn{
+    box-sizing: content-box;
+    height: 2rem;  
+    padding: 3px 14px;  
+    background-color:#a1ef7a;
+    color: black;
+    font-weight: bolder ;
+    font-size: 1.1rem;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    border: 2px solid black;
+    box-shadow: 5px 5px 0px var(--contrast-dark);
+}
+
+.getBtn:hover{
+    cursor: pointer;
+    transform: translateY(2px);
 }

@@ -1,7 +1,8 @@
 :root{
-    --header-bg: rgb(183, 45, 252); 
+    --contrast-dark: rgb(183, 45, 252); 
+    /* --contrast-light: #DFABFB; */
 }
 
 .light{
-    --header-bg: whitesmoke;
+    --contrast-bg: whitesmoke;
 }

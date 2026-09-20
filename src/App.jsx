@@ -21,7 +21,7 @@ function App() {
     const data  = await res.json();
 
     console.log(data);
-    setQuote(data[0].quote);
+    setQuote(data[0]);
   }
 
   return (
@@ -34,12 +34,23 @@ function App() {
           <div className="theme-toggle">theme</div>
         </div>
       </header>
+
       <main>
+        <input type='text'  className="search-category"/>
+        {quote && 
         <div className="quote-container">
-          {quote && quote}
+          <div className="quote">
+            {quote.quote}
+          </div>
+          <div className="author">
+            - {quote.author ? quote.author : "unknown"}
+          </div>
+          <div className="categories">
+            {quote.categories.map(c => "#"+c+" ")}
+          </div>
         </div>
-        <div className="tags">#life</div>
-        <button className="heading" onClick={getQuote}>Get Random Quote</button>
+        }
+        <button className="getBtn" onClick={getQuote}>Get Quote</button>
       </main>
     </div>
   );
