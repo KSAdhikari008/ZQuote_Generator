@@ -15,7 +15,7 @@ function App() {
       </header>
       <main>
         <div className="quote-container"></div>
-        <div className="tags"></div>
+        <div className="tags">#life</div>
         <button className="heading">Random Quote</button>
       </main>
     </div>
