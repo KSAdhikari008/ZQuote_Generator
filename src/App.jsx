@@ -60,7 +60,7 @@ function App() {
         </div>
       </header>
 
-      <main>
+      <main>  
         <div className="heading">
           <h1>
             <span>One Thought.</span>
