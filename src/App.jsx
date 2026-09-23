@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css'
 import { IoLogoGithub } from 'react-icons/io5';
 
@@ -7,7 +7,14 @@ function App() {
   const [quote, setQuote] = useState('');
   const [category, setCategory] = useState('');
   const [loading, setLoading] = useState(false);
+  const [theme, setTheme] = useState(false);
   
+  useEffect(()=>{
+
+    document.documentElement.classList.toggle("light",theme);
+  
+  },[theme]);
+
   async function getQuote(categoryParam  = ''){
     setLoading(true);
 
@@ -56,11 +63,13 @@ function App() {
         </div>
         <div className="right-section">
           <a href="https://github.com/KSAdhikari008/ZQuote_Generator"><IoLogoGithub/></a>           
-          <div className="theme-toggle">theme</div>
+          <button className="theme-toggle" 
+                  onClick={()=> setTheme(!theme)}
+          >theme</button>
         </div>
       </header>
 
-      <main>
+      <main>  
         <div className="heading">
           <h1>
             <span>One Thought.</span>
