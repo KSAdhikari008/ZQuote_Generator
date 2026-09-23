@@ -1,8 +1,12 @@
+
 :root{
-    --contrast-dark: rgb(183, 45, 252); 
-    /* --contrast-light: #DFABFB; */
+    --contrast-dark: rgb(183, 45, 252);
+    --bgc: rgb(209, 133, 247);
+    --hover-header: rgb(157, 246, 24); 
 }
 
 .light{
-    --contrast-bg: whitesmoke;
+    --contrast-dark: #A0A0A0;
+    --bgc: #f5f5f5;
+    --hover-header: rgb(232, 232, 232); 
 }

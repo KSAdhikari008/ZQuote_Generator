@@ -10,10 +10,11 @@ body{
 }
 
 .app{
-    background-color: rgb(209, 133, 247);
+    background-color: var(--bgc);
     height: 100vh;
     display: flex;
     flex-flow: column nowrap;
+    transition:  background-color 0.2s ease;
 }
 
 header{
@@ -30,8 +31,6 @@ header{
     font-weight: 700;
 }
 
-
-
 .right-section{
     display: flex;
     align-items: center;
@@ -43,6 +42,25 @@ header{
     color: inherit;
     font-size: 1.7rem;
     margin: 7px 0px 0px 0px;
+    transition: color 0.2s ease;
+}
+
+.right-section a:hover{
+    color: var(--hover-header);
+}
+
+.theme-toggle{
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 700;
+    background-color: inherit;
+    transition: color 0.2s ease;
+}
+
+.theme-toggle:hover{
+    cursor: pointer;
+    color: var(--hover-header);
 }
 
 main{
@@ -160,7 +178,7 @@ p{
 
 
 .quote{
-    font-weight: 600;
+    font-weight: 700;
     padding: 10px;
     flex:1;
     font-size: 1.1rem;
