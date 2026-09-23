@@ -1,3 +1,4 @@
+<img width="413" height="780" alt="Screenshot 2026-09-23 201241" src="https://github.com/user-attachments/assets/abc0a4b2-394b-477b-b93c-2bb8d245eb54" />
 # ZQuote Generator
 
 A simple quote generator built with React. Enter a category to find quotes around a topic, or leave it empty to get a random quote.
@@ -80,7 +81,13 @@ This project was built to practice working with:
 
 ## Screenshots
 
-none as of now.
+#### Dark Theme.
+
+<img width="413" height="780" alt="Screenshot 2026-09-23 201241" src="https://github.com/user-attachments/assets/abc0a4b2-394b-477b-b93c-2bb8d245eb54" />
+
+#### Light Theme.
+
+<img width="412" height="772" alt="Screenshot 2026-09-23 201221" src="https://github.com/user-attachments/assets/a5e7a661-6048-4ed8-9c22-9f8a80ff80d2" />
 
 ## License
 
